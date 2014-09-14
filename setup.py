@@ -8,6 +8,7 @@ setup(
     author = 'Alexei',
     author_email = 'hello@alexei.ro',
     url = 'https://github.com/alexei/backdrop',
+    download_url = 'https://github.com/alexei/backdrop/archive/0.0.1.tar.gz',
     keywords = ['configuration'],
     classifiers = [],
 )
