@@ -8,4 +8,5 @@ class Backdrop(dict):
         file_path = os.path.join(home_dir, '.backdrop', file_name)
         file = open(file_path)
         data = json.load(file)
+        file.close()
         super(Backdrop, self).__init__(data)
