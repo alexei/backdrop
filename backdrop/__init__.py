@@ -5,11 +5,12 @@ class Backdrop(dict):
     def __init__(self, project_name, directories=[]):
         directories.reverse()
 
-        # first look into user's home directory
+        '''
+        First look into user's home directory and
+        then we look into the current working directory.
+        '''
+        directories.append(os.getcwd())
         directories.append(os.path.expanduser('~'))
-
-        # then look into current directory
-        directories.append(os.path.dirname(os.path.realpath(__file__)))
 
         directories.reverse()
 
