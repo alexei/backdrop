@@ -9,7 +9,7 @@ class Backdrop(dict):
         directories.append(os.path.expanduser('~'))
 
         # then look into current directory
-        directories.append(os.path.dirname(os.path.realpath(__file__)))
+        directories.append(os.getcwd())
 
         directories.reverse()
 
